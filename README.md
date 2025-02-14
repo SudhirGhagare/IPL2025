@@ -15,5 +15,5 @@ This project aims to create an interactive and visually appealing landing page f
 ## 🛠️ Installation & Setup
 1. **Clone the Repository**  
    ```sh
-   [git clone https://github.com/your-username/ipl-2025-landing.git](https://github.com/SudhirGhagare/IPL2025.git)
+   git clone https://github.com/your-username/ipl-2025-landing.git
    cd IPL2025

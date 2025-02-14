@@ -1,21 +1,99 @@
+/* General Navbar Styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-.logo-ipl{
-    margin-left: 130px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    background-color: #dadde6; /* Match IPL Theme */
 }
 
-.logo-ipl::before{
-    content: "";
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #19398a;
+    padding: 15px 50px;
+}
+
+/* Logo Container with Background SVG */
+.logo-container {
+    position: relative;
+    display:flex;
+    margin-left:-16px ;
+    align-items: center;
+}
+
+/* Background SVG behind the logo */
+.background-svg {
     position: absolute;
-    background: url('assets/img/header-logo-bomb-left.svg') no-repeat;
-    background-size: contain;
     width: 328px; 
-    height: 58px;
-    left: 0px;
-    top: 0;
+    height: auto;
+    z-index: 0;
+}
+
+/* IPL Logo */
+.logo {
+    position: relative;
+    margin-left: 130px;
+    height: 40px;
+    z-index: 0;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for Nav Items */
+.nav-links li {
+    display: inline-block;
+}
+
+/* Nav Links */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Underline Animation for Active and Hover States */
+.nav-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(233, 128, 128);
+    transition: width 1s;
+    margin: 5px auto;
+}
+
+/* Hover Effect */
+.nav-links a:hover::after {
+    width: 50%;
+}
+
+/* Dropdown Arrow Styling */
+.nav-links a span {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

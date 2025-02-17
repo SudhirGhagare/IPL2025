@@ -13,15 +13,14 @@ setInterval(() => {
     countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }, 1000);
 
-function createFirework() {
-    let firework = document.createElement("div");
-    firework.classList.add("firework");
-    fireworksContainer.appendChild(firework);
 
-    firework.style.left = `${Math.random() * 100}%`;
-    firework.style.top = `${Math.random() * 100}%`;
+let container = document.getElementById("container");
 
-    //setTimeout(() => firework.remove(), 1500);
-}
+        // Create and append 4 divs
+        for (let i = 1; i <= 4; i++) {
+            let div = document.createElement("div");
+            div.className = "box";
+            container.appendChild(div);
+        }
 
 setInterval(createFirework, 500);

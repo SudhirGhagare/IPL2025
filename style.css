@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     background-color: #19398a;
     padding: 15px 50px;
+    height: 30px
 }
 
 /* Logo Container with Background SVG */
@@ -46,7 +47,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin: 0;
+    margin-top: 35px;
     padding: 0;
 }
 
@@ -108,10 +109,6 @@ body {
     justify-content: center;
     width: 350px;
     height: 120px;
-}
-
-.progress-ring {
-    display: block;
 }
 
 /* Dropdown Arrow Styling */

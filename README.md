@@ -5,6 +5,7 @@ This project aims to create an interactive and visually appealing landing page f
 - A **custom-styled navbar**
 - **Live countdown timer** for IPL 2025
 - **Team details & match schedules**
+- **Points Table Predictor**
 
 ## ⚡ Current Progress
 - [X] Navbar UI created  

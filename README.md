@@ -9,7 +9,7 @@ This project aims to create an interactive and visually appealing landing page f
 
 ## ⚡ Current Progress
 - [X] Navbar UI created  
-- [ ] Countdown Timer  
+- [X] Countdown Timer  
 - [ ] Team & Match Schedule Integration  
 - [ ] Responsive Design Improvements  
 

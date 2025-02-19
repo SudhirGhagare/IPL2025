@@ -1,27 +1,46 @@
-const countdown = document.getElementById("timer");
-const eventDate = new Date("March 22, 2025 18:00:00").getTime();
+const countdown = document.getElementById("timer-container");
+const eventDate = new Date("March 22, 2025 19:30:00").getTime();
+const now = new Date().getTime();
+const diff = eventDate - now;
+const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+const time = [days, hours, minutes, seconds]
+let container = document.getElementById("container");
+let timeDivs = [];
+const timerStringArray = ["Days", "Hours", "Minutes", "Seconds"];
 
-setInterval(() => {
+for (let i = 0; i < 4; i++) {
+    let div = document.createElement("div");
+    div.className = "box";
+   // div.innerText = time[i]
+    container.appendChild(div);
+    timeDivs.push(div);
+}
+console.log(timeDivs)
+function updateCountdown() {
+
     const now = new Date().getTime();
     const diff = eventDate - now;
-    
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    const timeArray = [days, hours, minutes, seconds];
 
-    countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-}, 1000);
+    timeDivs.forEach((div, index) => {
+        let span = document.createElement("span");
+        span.className = "time-string";
+        div.innerText = `${timeArray[index]}\n`;
+        span.innerText = timerStringArray[index];
+        div.appendChild(span);
 
-function createFirework() {
-    let firework = document.createElement("div");
-    firework.classList.add("firework");
-    fireworksContainer.appendChild(firework);
+       // div.innerText = `${timeArray[index]} `;
+    });
 
-    firework.style.left = `${Math.random() * 100}%`;
-    firework.style.top = `${Math.random() * 100}%`;
-
-    //setTimeout(() => firework.remove(), 1500);
 }
 
-setInterval(createFirework, 500);
+updateCountdown()
+setInterval(updateCountdown, 1000);
+        

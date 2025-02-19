@@ -9,6 +9,7 @@ const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 const time = [days, hours, minutes, seconds]
 let container = document.getElementById("container");
 let timeDivs = [];
+let timerStringArray = ["Days", "Hours", "Minutes", "Seconds"];
 
 for (let i = 0; i < 4; i++) {
     let div = document.createElement("div");
@@ -29,7 +30,8 @@ function updateCountdown() {
     const timeArray = [days, hours, minutes, seconds];
 
     timeDivs.forEach((div, index) => {
-        div.innerText = `${timeArray[index]} `;
+        div.innerText = `${timerStringArray[index]} \n\n ${timeArray[index]} `;
+       // div.innerText = `${timeArray[index]} `;
     });
 
 }

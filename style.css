@@ -3,14 +3,14 @@ body {
     margin: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    position: sticky;
     background-color: #19398a;
     padding: 15px 50px;
     height: 30px
@@ -46,7 +46,7 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 45px;
     padding: 0;
 }
 
@@ -77,19 +77,29 @@ body {
     margin: 5px auto;
 }
 
-.team-container{
-  
-    position: relative;
-} 
-
 .box{
     background-color: #f0f0f0;
     text-align: center;
     font-family: Arial, sans-serif;
     padding: 25px;
     width: 75px;
+    height: 75px;
     border-radius: 15px;
     box-shadow: 0 0 4px #19191c;
+}
+
+.team-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(86, 94, 123);
+   margin-top: 5px;
+    padding: 10px;
+}
+
+.team{
+    display: flex;
 }
 
 .time-string{
@@ -106,13 +116,11 @@ body {
 .timer-container {
    
     display: flex;
-
-    position: fixed;
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     background-size: 100px;
     padding: 50px;
     border-radius: 25px;
-    
     box-shadow: inset 0 0 8px #2e2e85;
     font-weight:bold;
     color: rgb(13, 44, 168);

@@ -90,16 +90,22 @@ body {
 
 .team-container{
     display: flex;
+    
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    background-color: rgb(86, 94, 123);
-   margin-top: 5px;
+    background-color: rgb(40, 50, 88);
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px;
 }
 
 .team{
     display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: stretch;
 }
 
 .time-string{

@@ -98,20 +98,21 @@ body {
     margin-top: 15px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 8px;
 }
 
 .team{
     display: flex;
     flex-grow: 1;
     align-items: center;
-    justify-content: stretch;
+    justify-content: space-evenly;
 }
 
 .time-string{
-    font-size: 20px;
-    font-style: oblique;
-    color: rgb(13, 44, 168);
+    font-size: 21px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(29, 61, 189);
 }
 
 /* Hover Effect */
@@ -122,6 +123,8 @@ body {
 .timer-container {
    
     display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     background-size: 100px;
@@ -131,10 +134,22 @@ body {
     font-weight:bold;
     color: rgb(13, 44, 168);
     font-size: 40px;
-    top: 50%;
+    top: 60%;
     left: 50%;
     gap: 30px;
     transform: translate(-50%, -50%);
+}
+
+.count-down-heading{
+    font-family: sans-serif;
+    color: rgb(17, 35, 155);
+    font-size: 30px;
+}
+
+.count-down-timer{
+    display: flex;
+    flex-grow: 1;
+    gap: 30px;
 }
 
 

@@ -77,6 +77,10 @@ body {
     margin: 5px auto;
 }
 
+.body-contain{
+    background-image: url('assets//img/bottom-section-bg.svg');
+}
+
 .box{
     background-color: #f0f0f0;
     text-align: center;
@@ -92,13 +96,12 @@ body {
     display: flex;
     
     align-items: center;
-    justify-content: space-evenly;
     width: 100%;
     background-color: rgb(40, 50, 88);
     margin-top: 15px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8px;
+    
 }
 
 .team{

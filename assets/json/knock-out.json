@@ -1,0 +1,34 @@
+[
+  {
+    "Match Number": "Qualifier 1",
+    "Date": "20 May 2025",
+    "Time": "19:30",
+    "Home Team": "TBD",
+    "Away Team": "TBD",
+    "Venue": "Rajiv Gandhi International Cricket Stadium, Hyderabad"
+  },
+  {
+    "Match Number": "Eliminator",
+    "Date": "21 May 2025",
+    "Time": "19:30 (N)",
+    "Home Team": "TBD",
+    "Away Team": "TBD",
+    "Venue": "Rajiv Gandhi International Cricket Stadium, Hyderabad"
+  },
+  {
+    "Match Number": "Qualifier 2",
+    "Date": "23 May 2025",
+    "Time": "19:30 (N)",
+    "Home Team": "TBD",
+    "Away Team": "TBD",
+    "Venue": "Eden Gardens, Kolkata"
+  },
+  {
+    "Match Number": "Final",
+    "Date": "25 May 2025",
+    "Time": "19:30 (N)",
+    "Home Team": "TBD",
+    "Away Team": "TBD",
+    "Venue": "Eden Gardens, Kolkata"
+  }
+]

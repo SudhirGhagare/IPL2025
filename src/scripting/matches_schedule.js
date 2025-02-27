@@ -64,3 +64,10 @@ function loadSchedule(matches) {
         schedule.appendChild(matchDiv);
     });
 }
+
+function toggleNav() {
+    let drawer = document.getElementById("nav-drawer");
+    if (window.matchMedia("(max-width: 700px), (max-height: 700px)").matches) {
+        drawer.classList.toggle("open");
+    }
+}

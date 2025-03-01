@@ -135,3 +135,36 @@ body {
     background-color: #ff5722;
     color: #ffffff;
 }
+
+.matches-tab{
+    display: flex;
+    justify-content: center;
+}
+
+.tab-links{
+    border: 2px solid #606187; 
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+.tab-links li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.tab-links li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #777;
+}
+
+.tab-links li a.active{
+    background-color: #ff5722;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}

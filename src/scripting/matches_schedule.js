@@ -71,3 +71,8 @@ function toggleNav() {
         drawer.classList.toggle("open");
     }
 }
+
+function toggleTab(clickedTab){
+    document.querySelector(".active").classList.remove("active");
+    clickedTab.classList.add("active");
+}

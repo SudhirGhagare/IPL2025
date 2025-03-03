@@ -200,7 +200,7 @@ body {
     box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
     transition: right 0.8s ease-in-out;
     padding: 20px;
-    z-index: 9999;  /* Ensures it stays on top */
+    z-index: 1;  /* Ensures it stays on top */
 }
 
 /* When the drawer is open */
@@ -219,7 +219,7 @@ body {
     }
 
     .nav-drawer.open {
-        width: 80%;
+        width: 50%;
     }
 
     .timer-container {

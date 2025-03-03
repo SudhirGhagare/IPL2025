@@ -142,7 +142,9 @@ body {
 }
 
 .tab-links{
-    border: 2px solid #606187; 
+    border: 2px solid #78787c; 
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(50, 50, 51, 0.507);
     border-radius: 5px;
     display: inline-block;
     text-align: center;

@@ -75,4 +75,14 @@ function toggleNav() {
 function toggleTab(clickedTab){
     document.querySelector(".active").classList.remove("active");
     clickedTab.classList.add("active");
+
+    let tabText = clickedTab.textContent.trim();
+    console.log(tabText === 'Play-Off');
+
+    document.getElementById('match-container').style.display = tabText === 'Group Stage' ? 'block' : 'none';
+    document.getElementById('playoff-frame').style.display = tabText === 'Play-Off' ? 'block' : 'none';
+
+    if (tabText === 'Play-Off') {
+        document.getElementById('playoff-frame').src = "http://localhost:5173"; 
+    }
 }

@@ -1,7 +1,7 @@
 import { TeamsContainer } from "./components/TeamsContainer";
 import "./App.css";
 import matches from "./assets/knock-out.json";
-import trophy from "../../assets/icon/trophy.png"
+import trophy from "../public/trophy.png"
 
 function App() {
 

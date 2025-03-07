@@ -135,3 +135,38 @@ body {
     background-color: #ff5722;
     color: #ffffff;
 }
+
+.matches-tab{
+    display: flex;
+    justify-content: center;
+}
+
+.tab-links{
+    border: 2px solid #78787c; 
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(50, 50, 51, 0.507);
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+.tab-links li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.tab-links li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #777;
+}
+
+.tab-links li a.active{
+    background-color: #ff5722;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}

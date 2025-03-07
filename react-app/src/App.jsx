@@ -1,11 +1,12 @@
 import { TeamsContainer } from "./components/TeamsContainer";
 import "./App.css";
 import matches from "./assets/knock-out.json";
+import trophy from "../../assets/icon/trophy.png"
 
 function App() {
 
   return (
-    <div className="grid h-full  grid-cols-3  gap-4 m-[42px]">
+    <div className="grid h-full  grid-cols-4  gap-4 ml-[152px] mt-[80px]">
 
       <div className="grid grid-rows-2 gap-2 w-full h-[450px]">
 
@@ -26,6 +27,7 @@ function App() {
         venue={matches[1]["Venue"]} />
         
       </div>
+
       <div className="grid grid-cols-1 mt-24">
       <TeamsContainer 
         matchType={matches[2]["Match Number"]} 
@@ -34,16 +36,18 @@ function App() {
         date={matches[2]["Date"]} time={matches[1]['Time']}
         venue={matches[2]["Venue"]} />
       </div>
-      <div className="grid grid-cols-1 mt-24">
 
+      <div className="grid grid-cols-1 mt-24">
       <TeamsContainer 
         matchType={matches[3]["Match Number"]} 
         homeTeam={matches[3]["Home Team"]}
         awayTeam={matches[3]["Away Team"]}
         date={matches[3]["Date"]} time={matches[3]['Time']}
         venue={matches[3]["Venue"]} />
-
       </div>
+
+      <img src = {trophy} className=" h-[150px] mt-[103px]"/>
+
     </div>
   );
 }

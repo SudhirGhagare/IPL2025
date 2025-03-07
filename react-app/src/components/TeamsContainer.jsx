@@ -40,7 +40,7 @@ export const TeamsContainer = ({matchType, venue, homeTeam, awayTeam, time,date}
               src={getTeamLogo("team_" + teamMap[homeTeam])}
             />
 
-            <span className="flex items-center justify-center bg-[#ff5722] text-white font-bold h-[28px] rounded-xl">
+            <span className="flex items-center justify-center bg-[#ff5722] ml-8 text-white font-bold h-[40px] w-[40px] rounded-[28px]">
               VS
             </span>
 

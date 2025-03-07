@@ -83,6 +83,6 @@ function toggleTab(clickedTab){
     document.getElementById('playoff-frame').style.display = tabText === 'Play-Off' ? 'block' : 'none';
 
     if (tabText === 'Play-Off') {
-        document.getElementById('playoff-frame').src = "http://localhost:5173"; 
+        document.getElementById('playoff-frame').src = "https://react-deployment-pied.vercel.app/"; 
     }
 }

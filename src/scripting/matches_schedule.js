@@ -106,9 +106,11 @@ function toggleTab(clickedTab){
     console.log(tabText === 'Play-Off');
 
     document.getElementById('match-container').style.display = tabText === 'Group Stage' ? 'block' : 'none';
-    document.getElementById('playoff-frame').style.display = tabText === 'Play-Off' ? 'block' : 'none';
+    document.getElementById('playoff-frame').style.display = (tabText === 'Play-Off' || tabText === 'Points Table') ? 'block' : 'none';
 
     if (tabText === 'Play-Off') {
         document.getElementById('playoff-frame').src = "https://react-deployment-pied.vercel.app/"; 
+    }else if(tabText === 'Points Table'){
+        document.getElementById('playoff-frame').src = "../pages/points_table.html";
     }
 }

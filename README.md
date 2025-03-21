@@ -1,6 +1,10 @@
 # Wel-Come to Project IPL 2025
 ### 🌐 Page Live URL: [IPL 2025 Welcome Page](https://sudhirghagare.github.io/IPL2025/src/pages/home.html)
 
+## ⚠️ Disclaimer 
+
+This code was developed by Sudhir Ghagare as part of a personal project. It is not affiliated with any official IPL or cricketing organization.
+
 ## 🚀 Project Overview
 This project aims to create an interactive and visually appealing landing page for IPL 2025, featuring:
 - **Live countdown timer** for IPL 2025
